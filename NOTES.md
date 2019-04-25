@@ -21,3 +21,7 @@
 - Change the workflow by making changes on GitHub and pulling them into Glitch
 - Rename the `master` branch on glitch: `git branch -m master default`
 - Add remote to git: `git remote add origin https://github.com/bauhouse/bau.glitch.me.git`
+- Fetch the GitHub repository: `git fetch origin`
+- Checkout the `master` branch: `git checkout origin/master`
+- The repository is in 'detached HEAD' state
+- Create the `master` branch: `git checkout -b master`
