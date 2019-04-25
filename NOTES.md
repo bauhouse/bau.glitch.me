@@ -34,3 +34,7 @@
   - Open the Glitch console
   - Navigate to the user directory: `cd`
   - Pull changes from the GitHub repository: `git pull origin master`
+- Update dependencies in `package.json` by clicking on the packages under the `Add Package` button in Glitch
+  - This put Glitch into an infinite loop
+  - `Error: ENOENT: no such file or directory, open '/app/data/stephen-bau.ghost.2019-04-25-15-13-41.json'`
+  - Grab the missing data file(s) from the `default` repository
