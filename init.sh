@@ -1,9 +1,11 @@
 #!/bin/bash
 set -e
 
-if [ ! -d themes/casper ]; then
+if [ ! -d themes ]; then
 (
-  git submodule update --init
+  mkdir themes
+  cd themes
+  git clone https://github.com/TryGhost/Casper.git casper
 )
 fi
 
