@@ -12,3 +12,6 @@
 - Found an article in the Ghost documentation: [How do I change my configured site URL?](https://docs.ghost.org/faq/change-configured-site-url/)
 - Create a GitHub repository: <https://github.com/bauhouse/bau.glitch.me/>
 - Create this NOTES file to initialize the repository
+- Export to GitHub from Glitch to the `bauhouse/bau.glitch.me` respository
+- Merge the `glitch` branch into `master`
+- Restore the `NOTES` file
