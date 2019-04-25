@@ -37,4 +37,10 @@
 - Update dependencies in `package.json` by clicking on the packages under the `Add Package` button in Glitch
   - This put Glitch into an infinite loop
   - `Error: ENOENT: no such file or directory, open '/app/data/stephen-bau.ghost.2019-04-25-15-13-41.json'`
-  - Grab the missing data file(s) from the `default` repository
+  - Try to grab the missing data file from the `default` repository but didn't find it there
+  - The application fails to start
+  
+> failed to start application on bau.glitch.me
+>
+>  This is most likely because your project has a code error.
+>  Check your project logs, fix the error and try again.  
