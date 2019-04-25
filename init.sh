@@ -1,6 +1,9 @@
 #!/bin/bash
 set -e
 
+mkdir .data
+mkdir logs
+
 if [ ! -f .data/ghost-local.db ]; then
 (
   cd node_modules/ghost
@@ -10,5 +13,3 @@ if [ ! -f .data/ghost-local.db ]; then
 fi
 
 jq ".url=\"https://$PROJECT_DOMAIN.glitch.me\"" config.development.json.base > config.development.json
-mkdir .data
-mkdir logs
