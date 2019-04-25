@@ -1,5 +1,5 @@
 {
-  "name": "glib-hamburger",
+  "name": "bau",
   "version": "0.0.1",
   "description": "What am I about?",
   "scripts": {
@@ -14,7 +14,7 @@
     "node": "10.x"
   },
   "repository": {
-    "url": "https://glitch.com/edit/#!/glib-hamburger"
+    "url": "https://glitch.com/edit/#!/bau"
   },
   "license": "MIT",
   "keywords": [
