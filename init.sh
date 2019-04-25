@@ -10,3 +10,5 @@ if [ ! -f .data/ghost-local.db ]; then
 fi
 
 jq ".url=\"https://$PROJECT_DOMAIN.glitch.me\"" config.development.json.base > config.development.json
+mkdir .data
+mkdir logs
