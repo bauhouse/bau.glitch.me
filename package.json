@@ -6,9 +6,9 @@
     "start": "bash init.sh && node node_modules/ghost/index"
   },
   "dependencies": {
-    "ghost": "^2.9.1",
-    "ghost-cli": "^1.9.7",
-    "knex-migrator": "^3.2.4"
+    "ghost": "^2.21.0",
+    "ghost-cli": "^1.10.0",
+    "knex-migrator": "^3.2.6"
   },
   "engines": {
     "node": "10.x"
