@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 
+git submodule update --init
+
 mkdir .data
 mkdir logs
 
