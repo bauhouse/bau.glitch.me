@@ -1,10 +1,20 @@
 #!/bin/bash
 set -e
 
-git submodule update --init
+if [ ! -d themes/casper ]; then
+(
+  git submodule update --init
+)
 
-mkdir .data
-mkdir logs
+if [ ! -d .data ]; then
+(
+  mkdir .data
+)
+
+if [ ! -d logs ]; then
+(
+  mkdir logs
+)
 
 if [ ! -f .data/ghost-local.db ]; then
 (
