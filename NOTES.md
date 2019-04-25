@@ -13,8 +13,12 @@
 - Create a GitHub repository: <https://github.com/bauhouse/bau.glitch.me/>
 - Create this NOTES file to initialize the repository
 - Export to GitHub from Glitch to the `bauhouse/bau.glitch.me` respository
+- Clone the repository to my computer
+  - Open a terminal window
+  - Navigate to the `glitch` directory in my `workspace`: `cd ~/workspace/glitch`
+  - Clone the GitHub repository into a directory named `bau`: `git clone git@github.com:bauhouse/bau.glitch.me.git bau`
 - Merge the `glitch` branch into `master`
-- Restore the `NOTES` file
+- Restore the `NOTES` file: `git checkout 9cacb0711 -- NOTES`
 - Open the Glitch console
 - View the Git branches: `git branch -v`
 - The master repository does not contain the same history as the exported `glitch` branch
