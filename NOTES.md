@@ -29,3 +29,8 @@
 - Checkout the `master` branch: `git checkout origin/master`
 - The repository is in 'detached HEAD' state
 - Create the `master` branch: `git checkout -b master`
+- Rename NOTES to NOTES.md to render Markdown in GitHub
+- Pull the repository changes into Glitch
+  - Open the Glitch console
+  - Navigate to the user directory: `cd`
+  - Pull changes from the GitHub repository: `git pull origin master`
