@@ -15,3 +15,9 @@
 - Export to GitHub from Glitch to the `bauhouse/bau.glitch.me` respository
 - Merge the `glitch` branch into `master`
 - Restore the `NOTES` file
+- Open the Glitch console
+- View the Git branches: `git branch -v`
+- The master repository does not contain the same history as the exported `glitch` branch
+- Change the workflow by making changes on GitHub and pulling them into Glitch
+- Rename the `master` branch on glitch: `git branch -m master default`
+- Add remote to git: `git remote add origin https://github.com/bauhouse/bau.glitch.me.git`
