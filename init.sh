@@ -5,16 +5,19 @@ if [ ! -d themes/casper ]; then
 (
   git submodule update --init
 )
+fi
 
 if [ ! -d .data ]; then
 (
   mkdir .data
 )
+fi
 
 if [ ! -d logs ]; then
 (
   mkdir logs
 )
+fi
 
 if [ ! -f .data/ghost-local.db ]; then
 (
