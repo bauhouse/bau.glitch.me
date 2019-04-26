@@ -43,4 +43,41 @@
 > failed to start application on bau.glitch.me
 >
 >  This is most likely because your project has a code error.
->  Check your project logs, fix the error and try again.  
+>  Check your project logs, fix the error and try again.
+
+- Fixed the install process by modifying the `init.sh` script and including the config files
+
+    #!/bin/bash
+    set -e
+
+    if [ ! -d themes ]; then
+    (
+      mkdir themes
+      cd themes
+      git clone https://github.com/TryGhost/Casper.git casper
+    )
+    fi
+
+    if [ ! -d .data ]; then
+    (
+      mkdir .data
+    )
+    fi
+
+    if [ ! -d logs ]; then
+    (
+      mkdir logs
+    )
+    fi
+
+    if [ ! -f .data/ghost-local.db ]; then
+    (
+      cd node_modules/ghost
+      knex-migrator init
+      mv content/data/ghost-dev.db ~/.data/ghost-local.db
+    )
+    fi
+
+    jq ".url=\"https://$PROJECT_DOMAIN.glitch.me\"" config.development.json.base > config.development.json
+
+- Created a new repository to use as an install script: [builders/ghostly](https://github.com/builders/ghostly/)
