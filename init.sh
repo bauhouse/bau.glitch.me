@@ -1,6 +1,26 @@
 #!/bin/bash
 set -e
 
+if [ ! -d themes ]; then
+(
+  mkdir themes
+  cd themes
+  git clone https://github.com/TryGhost/Casper.git casper
+)
+fi
+
+if [ ! -d .data ]; then
+(
+  mkdir .data
+)
+fi
+
+if [ ! -d logs ]; then
+(
+  mkdir logs
+)
+fi
+
 if [ ! -f .data/ghost-local.db ]; then
 (
   cd node_modules/ghost
@@ -9,4 +29,4 @@ if [ ! -f .data/ghost-local.db ]; then
 )
 fi
 
-# jq ".url=\"https://$PROJECT_DOMAIN.glitch.me\"" config.development.json.base > config.development.json
+jq ".url=\"https://$PROJECT_DOMAIN.glitch.me\"" config.development.json.base > config.development.json
